@@ -1,0 +1,228 @@
+.backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &.is-hidden .modal {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background: $white-text-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  padding: 40px;
+  color: $title-text-color;
+
+  &.is-hidden {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 1);
+  color: $primary-text-color;
+  margin-top: 12px;
+  position: relative;
+}
+
+.modal-content-label {
+  position: relative;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: $title-text-color;
+}
+
+.modal-content-imput :nth-child(n + 3) {
+  margin-top: 10px;
+}
+
+.modal-content-imput {
+  margin-top: 4px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 35px;
+  display: block;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  width: 100%;
+  resize: none;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-content-input:focus {
+  color: border $accent-color;
+}
+
+.modal-content-imput:focus ~ .modal-content-icon,
+.modal-content-imput:hover ~ .modal-content-icon {
+  fill: $accent-color;
+}
+
+.modal-content-imput:focus,
+.modal-content-imput:hover {
+  border: 1px solid $accent-color;
+}
+
+.modal-content-imput.coments {
+  padding-left: 16px;
+  height: 120px;
+}
+
+.modal-content-imput.coments::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-content-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  color: $title-text-color;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-content-check {
+  display: flex;
+  justify-content: center;
+  color: $title-text-color;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  align-items: center;
+  flex-direction: row;
+}
+
+.checkwindow {
+  display: block;
+  padding-left: 20px;
+}
+
+.link-contract {
+  margin-left: 4px;
+  color: $accent-color;
+  text-decoration: underline;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.link-agreement {
+  text-decoration: none;
+  color: $title-text-color;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.input-check-castom {
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $primary-text-color;
+  border-radius: 4px;
+  fill: $white-text-color;
+  background-color: $white-text-color;
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.input-check-castom:hover,
+.input-check-castom:focus {
+  border: 1px solid $accent-color;
+}
+
+.input-check-castom svg {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  fill: $white-text-color;
+}
+
+.indent:checked ~ .input-check-castom {
+  background-color: $accent-color;
+  border-color: $accent-color;
+}
+
+.indent {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal-input-check:checked ~ .input-check-castom {
+  background-color: $accent-color;
+  border-color: $accent-color;
+}
+.modal-content-check .link {
+  margin-left: 4px;
+  color: $accent-color;
+  text-decoration: underline;
+}
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+
+.indent:hover + .input-check-castom,
+.indent:focus + .input-check-castom {
+  border: 1px solid $accent-color;
+}

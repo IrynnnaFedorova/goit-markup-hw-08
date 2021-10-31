@@ -1,0 +1,130 @@
+.footer {
+  background-color: $dark-bgc;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footeraddress {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $white-text-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footercontackt {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $footer-contact;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accentfooter {
+  color: $white-text-color;
+}
+.address {
+  font-style: inherit;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footeraddress:hover,
+.footeraddress:focus {
+  color: $accent-color;
+}
+.footercontackt:hover,
+.footercontackt:focus {
+  color: $accent-color;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+  display: block;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 70px;
+}
+
+.footer-join-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-networks {
+  flex-wrap: wrap;
+}
+
+.social-icons-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $white-text-color;
+  }
+}
+
+.address-link-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.footer-item:last-child {
+  margin-left: auto;
+}
+.footer-form-icon {
+  margin-left: 10px;
+  fill: #ffffff;
+}
+
+.footer-form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-mail-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-mail-input .helper::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-mail-input label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-mail-input input {
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-right: 16px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.footer-mail-input input:hover,
+.footer-mail-input input:focus {
+  border: 1px solid $accent-color;
+}
