@@ -1,6 +1,10 @@
 .work {
   padding-top: 0;
 
+  @media screen {max-width: 767px){
+    display:none;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
