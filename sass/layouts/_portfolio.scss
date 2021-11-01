@@ -72,8 +72,8 @@
   overflow: hidden;
 }
 
-.product-link: hover .description,
-.product-link: focus .description {
+.product-link:hover.description,
+.product-link:focus.description {
   transform: translateY(0);
   opacity: 1;
 }
