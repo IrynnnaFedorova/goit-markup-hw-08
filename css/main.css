@@ -108,7 +108,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.btn {
+.hero-overlay__btn {
   background: #2196f3;
   color: #ffffff;
   font-size: 16px;
@@ -126,7 +126,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:hover, .btn:focus {
+.hero-overlay__btn:hover, .hero-overlay__btn:focus {
   background-color: #0677d4;
 }
 
@@ -629,19 +629,19 @@ img {
   margin-bottom: 30px;
 }
 
-.characteristic .characteristic-item::before-item:nth-child(1)::before {
+.characteristic-item:nth-child(1)::before {
   background-image: url(../images/antenna.svg);
 }
 
-.characteristic .characteristic-item::before-item:nth-child(2)::before {
+.characteristic-item:nth-child(2)::before {
   background-image: url(../images/clock.svg);
 }
 
-.characteristic .characteristic-item::before-item:nth-child(3)::before {
+.characteristic-item:nth-child(3)::before {
   background-image: url(../images/diagram.svg);
 }
 
-.characteristic .characteristic-item::before-item:nth-child(4)::before {
+.characteristic-item:nth-child(4)::before {
   background-image: url(../images/astronaut.svg);
 }
 
@@ -704,7 +704,7 @@ img {
   margin-top: -30px;
 }
 
-.team-networks__list {
+.team-networks {
   justify-content: center;
 }
 
@@ -995,13 +995,13 @@ img {
   overflow: hidden;
 }
 
-.product-link:hover.description,
-.product-link:focus.description {
+.product-link:hover .description,
+.product-link:focus .description {
   transform: translateY(0);
   opacity: 1;
 }
 
-.bgsproduct:hover.description {
+.bgsproduct:hover .description {
   transform: translateY(0);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;

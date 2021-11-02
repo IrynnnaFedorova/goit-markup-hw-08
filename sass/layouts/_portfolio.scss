@@ -72,13 +72,13 @@
   overflow: hidden;
 }
 
-.product-link:hover.description,
-.product-link:focus.description {
+.product-link:hover .description,
+.product-link:focus .description {
   transform: translateY(0);
   opacity: 1;
 }
 
-.bgsproduct:hover.description {
+.bgsproduct:hover .description {
   transform: translateY(0);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
