@@ -74,6 +74,11 @@
   &:focus {
     background-color: #0677d4;
   }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    align-items: center;
+    margin-top: 20px;
+    display: inline;
+  }
 }
 .close-btn {
   position: absolute;

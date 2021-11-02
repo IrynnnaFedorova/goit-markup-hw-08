@@ -1,3 +1,22 @@
+.chapter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.chapter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+ul.list.chapter {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: inline;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+  }
+}
+
 .text-portfolio {
   color: $title-text-color;
   font-weight: normal;
@@ -11,6 +30,13 @@
   margin-left: -30px;
   margin-top: -30px;
   padding: 0px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 15px;
+  }
 }
 
 .bgcproduct {

@@ -47,10 +47,22 @@
 .footer-container {
   display: flex;
   align-items: baseline;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: block;
+    justify-content: center;
+  }
 }
 
 .footer-item:not(:last-child) {
   margin-right: 70px;
+}
+.footer-item {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    text-align: center;
+    margin-top: 60px;
+    display: inline;
+  }
 }
 
 .footer-join-title {
@@ -60,6 +72,10 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
 .footer-networks {
@@ -92,11 +108,19 @@
 .footer-form {
   display: flex;
   align-items: flex-end;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .footer-mail-input {
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    align-items: center;
+    margin-top: 60px;
+  }
 }
 
 .footer-mail-input .helper::placeholder {
@@ -122,6 +146,10 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
+  }
 }
 
 .footer-mail-input input:hover,

@@ -45,6 +45,10 @@
   letter-spacing: 0.02em;
   align-items: center;
   margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: block;
+    margin-left: 84px;
+  }
 }
 
 .header__contact-item:not(:last-child) {
@@ -58,6 +62,10 @@
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
 }
 .header__contact-list .link:hover,
 .header__contact-list .link:focus,
