@@ -19,7 +19,7 @@ body {
   background-color: var(--btn-second-color);
   color: $primary-text-color;
   font-family: Roboto, sans-serif;
-  @include font(14px, 1.71, 400, normal);
+  @include font(14px, 400, 1.71, normal);
 }
 
 p,
