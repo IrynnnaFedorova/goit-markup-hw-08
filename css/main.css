@@ -184,7 +184,7 @@ img {
   background-color: #0677d4;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer-item-button {
     align-items: center;
     margin-top: 20px;
@@ -938,6 +938,16 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100%;
+  }
+}
+
 .footer-item:not(:last-child) {
   margin-right: 70px;
 }
@@ -947,6 +957,12 @@ img {
     text-align: center;
     margin-top: 60px;
     display: inline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-item {
+    text-align: center;
   }
 }
 
@@ -988,6 +1004,12 @@ img {
   margin-left: auto;
 }
 
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .footer-item:last-child {
+    margin-left: 0;
+  }
+}
+
 .footer-form-icon {
   margin-left: 10px;
   fill: #ffffff;
@@ -998,7 +1020,7 @@ img {
   align-items: flex-end;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer-form {
     display: block;
     text-align: center;
@@ -1010,7 +1032,7 @@ img {
   flex-direction: column;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer-mail-input {
     align-items: center;
     margin-top: 60px;
@@ -1044,7 +1066,7 @@ img {
   background-color: transparent;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer-mail-input input {
     width: 450px;
   }
@@ -1067,8 +1089,17 @@ img {
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
+  .chapter-item:not(:last-child) {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   ul.list.chapter {
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: baseline;
   }
 }
 
