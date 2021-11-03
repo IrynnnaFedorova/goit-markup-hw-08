@@ -48,24 +48,49 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-overlay {
-      background-image: url("/images/mobversion/header-img-2x.jpg");
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/images/mobversion/header-img-2x.jpg");
     }
     @media screen and (min-width: 768px) {
-      background-image: url("/images/tabversion/headertab-img-1x.jpg");
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/images/tabversion/headertab-img-1x.jpg");
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .hero-overlay {
-          background-image: url("/images/tabversion/headertab-img-2x.jpg");
+          background-image: linear-gradient(
+              to right,
+              rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)
+            ),
+            url("/images/tabversion/headertab-img-2x.jpg");
         }
       }
       @media screen and (min-width: 1200px) {
-        background-image: url("/images/headerimg.jpg");
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url("/images/headerimg.jpg");
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
           .hero-overlay {
-            background-image: url("/images/destopversion/header-img-destop2x.jpg");
+            background-image: linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+              ),
+              url("/images/destopversion/header-img-destop2x.jpg");
           }
         }
       }
