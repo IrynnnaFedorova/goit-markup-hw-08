@@ -1,7 +1,7 @@
-(() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
+/*(() => {
+  const mobileMenu = document.querySelector('[js-menu-container]');
+  const openMenuBtn = document.querySelector('[js-open-menu]');
+  const closeMenuBtn = document.querySelector('[js-close-menu]');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -26,4 +26,32 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
+})();*/
+(() => {
+  const refs = {
+    openMenuBtn: document.querySelector('.menu-open-btn'),
+    closeMenuBtn: document.querySelector('.menu-close-btn'),
+    menu: document.querySelector('.backdrop'),
+    menuItem: document.querySelector('.mobile-menu')
+  };
+
+  refs.openMenuBtn.addEventListener('click', toggleMenu);
+  refs.closeMenuBtn.addEventListener('click', toggleMenu);
+  refs.menu.addEventListener('click', removeMenu);
+
+  function toggleMenu() {
+    refs.Menu.classList.toggle('is-hidden');
+  }
+  function removeMenu(e) {
+    if (e.target === refs.menu) {
+      refs.menu.classList.add('is-hidden')
+    }
+  }
 })();
+
+/*(() => {
+  const menuBtnRef = document.querySelector("[data-menu-button]");
+  menuBtnRef.addEventListener("click", () => {
+    menuBtnRef.classList.toggle("is-open");
+  });
+})();*/

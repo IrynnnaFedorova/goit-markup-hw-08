@@ -16,7 +16,7 @@
     pointer-events: none;
   }
 
-  &.is-hidden .modal {
+  &.is-hidden.modal {
     transform: scale(0);
     opacity: 0;
   }
