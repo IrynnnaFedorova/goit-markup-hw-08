@@ -912,7 +912,7 @@ button {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-width: 1200px) {
   .hero-overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/headerimg.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header.jpg");
   }
 }
 
