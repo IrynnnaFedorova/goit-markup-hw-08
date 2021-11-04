@@ -145,7 +145,6 @@ button {
   margin-left: auto;
   cursor: pointer;
   color: #212121;
-  /*margin: 22px;*/
 }
 
 @media screen and (min-width: 768px) {
@@ -154,10 +153,14 @@ button {
   }
 }
 
-.menu-btn--close {
+.menu-btn--open--close {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+.menu-icon {
+  fill: currentColor;
 }
 
 .mobile-menu-content {
@@ -218,16 +221,6 @@ button {
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
-}
-
-.menu-icon {
-  fill: currentColor;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-icon--open {
-    display: none;
-  }
 }
 
 .hero-overlay__btn {
@@ -364,12 +357,6 @@ button {
 
 .social-list {
   display: flex;
-}
-
-@media screen and (min-width: 320px) {
-  .social-list {
-    justify-content: center;
-  }
 }
 
 .social-item:not(:last-child) {

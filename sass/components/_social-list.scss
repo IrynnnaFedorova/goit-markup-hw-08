@@ -1,8 +1,5 @@
 .social-list {
   display: flex;
-  @media screen and (min-width: 320px) {
-    justify-content: center;
-  }
 }
 .social-item:not(:last-child) {
   margin-right: 10px;
