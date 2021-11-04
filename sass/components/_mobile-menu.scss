@@ -96,6 +96,10 @@
   &:not(:last-child) {
     margin-bottom: 32px;
   }
+  .mobile-menu-item:hover,
+  .mobile-menu-item:focus {
+    color: $accent-color;
+  }
 }
 .network-menu {
   &:not(:last-child) {
@@ -147,4 +151,8 @@
   line-height: 28px;
   letter-spacing: 0.02em;
   color: $title-text-color;
+}
+.mobile-menu-mail:hover,
+.mobile-menu-mail:focus {
+  color: $accent-color;
 }
