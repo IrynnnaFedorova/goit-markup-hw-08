@@ -15,34 +15,30 @@
         <div class="header__container container">
         <nav class="header__nav">
         <a href="./index.html" class="logo">Web<span class="logo--accent-white">Studio</span></a>
-        <!--<button type="button" class="menu-open-btn" aria-expanded="false" menu-open-btn><svg width="40" height="40" aria-label="Открывает мобильное меню">
-            <use class="icon-menu" href="./images/mob-menu.svg#icon-menu-mobmenu"></use>
-            <use class="icon-close" href="./images/mob-menu.svg#icon-close-mobmenu"></use>
-        </svg></button>
-        <div class="mobile-menu is-hidden">
-            <div class="mobile-menu-content">
+        <button type="button" class="menu-btn menu-btn--open" aria-expanded="false" js-open-menu><svg class="menu-icon" width="40" height="40" aria-label="Открывает мобильное меню">
+            <use href="./images/mob-menu.svg#icon-menu-mobmenu"></use></svg></button>
+        <div class="mobile-menu" js-menu-container>
                 <ul class="mobile-menu-list list">
                     <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link link">Студия</a></li>
                     <li class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-link link">Портфолио</a></li>
                     <li class="mobile-menu-item"><a href="#contacts"  class="mobile-menu-link link" >Контакты</a></li>
                 </ul>
+                <div class="mobile-menu-content">
                 <ul class="mobile-menu-conect list">
                 <li class="mobile-menu-item"><a href="" class="mobile-menu-tell link">+38 096 111 11 11</a></li>
                 <li class="mobile-menu-item"><a href="" class="mobile-menu-mail link">info@devstudio.com</a></li>
                 </ul>
-                <div class="mobile-menu-network">
                 <ul class="mobile-menu-socialconect list">
                     <li class="mobile-menu-item"><a href="" class="mobile-menu-social link">Instagram</a></li>
                     <li class="mobile-menu-item"><a href="" class="mobile-menu-social link">Twitter</a></li>
                 <li class="mobile-menu-item"><a href="" class="mobile-menu-social link">Facebook</a></li>
                 <li class="mobile-menu-item"><a href="" class="mobile-menu-social link">LinkedIn</a></li>
                 </ul>
-                </div>
         </div>
-            <button type="button" class="menu-close-btn" aria-expanded="true" menu-close-btn><svg width="40" height="40" aria-label="Закрыввает мобильное меню">
-    <use class="icon-close" href="./images/mob-menu.svg#icon-close-mobmenu"></use>
+            <button type="button" class="menu-btn menu-btn--close" aria-expanded="true" js-close-menu><svg class="menu-icon" width="40" height="40" aria-label="Закрыввает мобильное меню">
+    <use href="./images/mob-menu.svg#icon-close-mobmenu"></use>
     </svg></button>
-            </div>-->
+            </div>
         <ul class="header__nav-list list">
             <li class="header__nav-item"><a href="./index.html" class="link current header__nav-link">Студия</a></li>
             <li class="header__nav-item"><a href="./portfolio.html" class="link header__nav-link">Портфолио</a></li>
@@ -97,17 +93,17 @@
             <li class="work__item">
                 <picture>
                     <source srcset="./images/frontend.jpg  1x, ./images/destopversion/frontend-destop2x.jpg 2x"
-                        media="(min-width: 1200px)">
+                        media="(min-width: 1200px)" type="image/jpeg">
                 <img src="./images/frontend.jpg" alt="написание кода" width="370"><p class="work__item-text">Десктопные приложения</p></picture></li>
             <li class="work__item">
                 <picture>
                     <source srcset="./images/development.jpg  1x, ./images/destopversion/development-destop2x.jpg 2x"
-                        media="(min-width: 1200px)">
+                        media="(min-width: 1200px)" type="image/jpeg">
                 <img src="./images/development.jpg" alt="разработка мобильной версии" width="370"><p class="work__item-text">Мобильные приложения</p></picture></li>
             <li class="work__item">
                 <picture>
                     <source srcset="./images/webdesign.jpg  1x, ./images/destopversion/webdesign-destop2x.jpg 2x"
-                        media="(min-width: 1200px)">
+                        media="(min-width: 1200px)" type="image/jpeg">
                 <img src="./images/webdesign.jpg" alt="lразработка дизайна" width="370"><p class="work__item-text">Дизайнерские решения</p></picture></li>
         </ul>
         </div>
@@ -117,9 +113,9 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="list team-list">
             <li class="team-list__item"><picture>
-            <source srcset="./images/igordemyanenko.jpg  1x, ./images/destopversion/igordemyanenko-destop2x.jpg 2x" media="(min-width: 1200px)">
-            <source srcset="./images/tabversion/igordemyanenko-tab-1x.jpg  1x, ./images/tabversion/igordemyanenko-tab-2x.jpg 2x" media="(min-width: 768px)">
-            <source srcset="./images/mobversion/igordemyanenko-1x.jpg  1x, ./images/mobversion/igordemyanenko-2x.jpg 2x" media="(min-width: 480 px)">
+            <source srcset="./images/igordemyanenko.jpg  1x, ./images/destopversion/igordemyanenko-destop2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+            <source srcset="./images/tabversion/igordemyanenko-tab-1x.jpg  1x, ./images/tabversion/igordemyanenko-tab-2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+            <source srcset="./images/mobversion/igordemyanenko-1x.jpg  1x, ./images/mobversion/igordemyanenko-2x.jpg 2x" media="(min-width: 480 px)" type="image/jpeg">
             <img class="team-list__img" src="./images/igordemyanenko.jpg" alt="сотрудник Игорь Демьяненко дизайнер" width="270"></picture>
             <h3 class="team-list__title">Игорь Демьяненко</h3>
             <p class="team-list__position">Product Designer</p>
@@ -149,11 +145,11 @@
             </li></ul></li>
             <li class="team-list__item"><picture>
             <source srcset="./images/olgarepina.jpg  1x, ./images/destopversion/olgarepina-destop2x.jpg 2x"
-                media="(min-width: 1200px)">
+                media="(min-width: 1200px)" type="image/jpeg">
             <source srcset="./images/tabversion/olgarepina-tab-1x.jpg  1x, ./images/tabversion/olgarepina-tab-2x.jpg 2x"
-                media="(min-width: 768px)">
+                media="(min-width: 768px)" type="image/jpeg">
             <source srcset="./images/mobversion/olgarepina-1x.jpg  1x, ./images/mobversion/olgarepina-2x.jpg 2x"
-                media="(min-width: 480 px)">
+                media="(min-width: 480 px)" type="image/jpeg">
                 <img class="team-list__img" src="./images/olgarepina.jpg" alt="сотрудник Ольга Репина фронт-энд разработчик" width="270"></picture>
             <h3 class="team-list__title">Ольга Репина</h3>
             <p class="team-list__position">Frontend Developer</p>
@@ -184,11 +180,11 @@
                 </li></ul></li>
             <li class="team-list__item"><picture>
                 <source srcset="./images/nikolaytarasov.jpg  1x, ./images/destopversion/nikolaytarasov-destop2x.jpg 2x"
-                media="(min-width: 1200px)">
+                media="(min-width: 1200px)" type="image/jpeg">
             <source srcset="./images/tabversion/nikolaytarasov-tab-1x.jpg  1x, ./images/tabversion/nikolaytarasov-tab-2x.jpg 2x"
-                media="(min-width: 768px)">
+                media="(min-width: 768px)" type="image/jpeg">
             <source srcset="./images/mobversion/nikolaytarasov-1x.jpg  1x, ./images/mobversion/nikolaytarasov-2x.jpg 2x"
-                media="(min-width: 480 px)">
+                media="(min-width: 480 px)" type="image/jpeg">
                 <img class="team-list__img" src="./images/nikolaytarasov.jpg" alt="сотрудник Николай Тарасов маркетолог" width="270"></picture>
             <h3 class="team-list__title">Николай Тарасов</h3>
             <p class="team-list__position">Marketing</p>
@@ -219,11 +215,11 @@
                 </li></ul></li>
             <li class="team-list__item"><picture>
                 <source srcset="./images/mikhailyermakov.jpg  1x, ./images/destopversion/mikhailyermakov-destop2x.jpg 2x"
-                    media="(min-width: 1200px)">
+                    media="(min-width: 1200px)" type="image/jpeg">
                 <source srcset="./images/tabversion/mikhailyermakov-tab-1x.jpg  1x, ./images/tabversion/mikhailyermakov-tab-2x.jpg 2x"
-                    media="(min-width: 768px)">
+                    media="(min-width: 768px)" type="image/jpeg">
                 <source srcset="./images/mobversion/mikhailyermakov-1x.jpg  1x, ./images/mobversion/mikhailyermakov-2x.jpg 2x"
-                    media="(min-width: 480 px)">
+                    media="(min-width: 480 px)" type="image/jpeg">
                 <img class="team-list__img" src="./images/mikhailyermakov.jpg" alt="сотрудник Михаил Ермаков дизайнер" width="270"></picture>
             <h3 class="team-list__title">Михаил Ермаков</h3>
             <p class="team-list__position">UI Designer</p>
@@ -400,5 +396,8 @@
 </div>
 <script src="./js/modal.js"></script>
 <script src="./js/mobile-menu.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
 </body>
 </html>
