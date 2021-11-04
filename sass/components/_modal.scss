@@ -40,7 +40,7 @@
     opacity: 0;
     transform: scale(0);
   }
-  @media screen and (min-width: 320px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     width: 450px;
     min-height: 609px;
     margin-top: 93px;
@@ -86,7 +86,7 @@
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 320px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     width: 370px;
   }
 }
@@ -136,7 +136,7 @@
   line-height: 1.7;
   align-items: center;
   flex-direction: row;
-  @media screen and (min-width: 320px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     font-size: 12px;
     line-height: 0.85;
     letter-spacing: 0.03em;
@@ -159,7 +159,7 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  @media screen and (min-width: 320px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     font-size: 12px;
     line-height: 0.85;
     letter-spacing: 0.03em;
