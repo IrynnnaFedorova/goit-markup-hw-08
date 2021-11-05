@@ -6,6 +6,12 @@
     align-items: center;
     @media screen and (max-width: 767px) {
       position: relative;
+      margin: 0;
+      padding-left: 15px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 
@@ -17,6 +23,9 @@
     padding-top: 24px;
     padding-bottom: 25px;
     display: block;
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+    }
   }
 }
 .header__nav-list {

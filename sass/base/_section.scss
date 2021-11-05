@@ -1,6 +1,12 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-top: 60px;
+  }
 }
 
 .section-title {

@@ -49,7 +49,7 @@ ul.list.chapter {
   margin-top: 30px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc(100% / 2 - 30px);
-    margin-left: 15px;
+    margin-left: 30px;
   }
 }
 
@@ -83,6 +83,7 @@ ul.list.chapter {
 .textdecoport {
   margin-bottom: 4px;
   font-size: 18px;
+  letter-spacing: 0.06em;
 }
 .description {
   position: absolute;
