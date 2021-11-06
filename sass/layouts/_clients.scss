@@ -1,22 +1,23 @@
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
-
-  @media screen and (max-width: 767px) {
-    flex-basis: calc(100% / 2 - 30px);
-    justify-content: center;
-  }
+  flex-basis: calc((100% / 2 - 30px));
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 30px;
+    justify-content: center;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 
 .clients-list__item {
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc(100% / 6 - 30px);
+  flex-basis: calc((100% / 6 - 30px));
 }
 
 .clients-list__links {
@@ -30,12 +31,6 @@
   border-radius: 4px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (max-width: 767px) {
-    width: 210px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 226px;
-  }
 }
 
 .clients-list__links:hover,

@@ -5,23 +5,15 @@
   margin-left: -30px;
 
   &-item {
-    width: calc(100% / 4 - 30px);
+    width: calc(100% / 1 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-    @media screen and (max-width: 767px) {
-      width: auto;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 767px) {
       width: calc(100% / 2 - 30px);
-      margin-left: 15px;
     }
-  }
-  @media screen and (max-width: 768px) {
-    display: block;
-    justify-content: center;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
+    @media screen and (min-width: 1199px) {
+      width: calc(100% / 4 - 30px);
+    }
   }
 }
 
@@ -40,11 +32,9 @@
 
 .text {
   color: $title-text-color;
-  @media screen and (min-width: 320px) {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-  }
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .characteristic .characteristic-item::before {
   content: "";
@@ -56,12 +46,6 @@
   background-position: center;
   border-radius: 4px;
   margin-bottom: 30px;
-  @media screen and (max-width: 767px) {
-    width: 450px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1190px) {
-    width: 354px;
-  }
 }
 
 .characteristic-item:nth-child(1)::before {

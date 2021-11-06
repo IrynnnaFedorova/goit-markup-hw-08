@@ -41,9 +41,9 @@
     transform: scale(0);
   }
   @media screen and (max-width: 1199px) {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     min-height: 609px;
-    margin-top: 93px;
   }
 }
 
@@ -86,9 +86,6 @@
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (max-width: 1199px) {
-    width: 370px;
-  }
 }
 
 .modal-content-input:focus {
