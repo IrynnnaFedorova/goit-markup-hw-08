@@ -1,7 +1,13 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 30px;
@@ -17,4 +23,12 @@
   line-height: 1.1;
   text-align: center;
   margin-bottom: 50px;
+  font-weight: bold;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }

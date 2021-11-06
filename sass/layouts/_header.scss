@@ -99,6 +99,11 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 10px;
     padding-bottom: 0;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
   }
 }
 .header__contact-list .link:hover,
