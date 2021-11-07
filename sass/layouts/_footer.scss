@@ -157,7 +157,7 @@
   padding-right: 16px;
   padding-bottom: 15px;
   padding-left: 16px;
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -165,7 +165,7 @@
   border-radius: 4px;
   background-color: transparent;
   @media screen and (min-width: 1200px) {
-    width: 358px;
+    max-width: 358px;
   }
 }
 
