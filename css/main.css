@@ -1391,7 +1391,7 @@ img.team-list__img {
   padding-right: 16px;
   padding-bottom: 15px;
   padding-left: 16px;
-  min-width: 450px;
+  width: 450px;
   height: 50px;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1402,7 +1402,7 @@ img.team-list__img {
 
 @media screen and (min-width: 1200px) {
   .footer-mail-input input {
-    min-width: 358px;
+    width: 358px;
   }
 }
 
