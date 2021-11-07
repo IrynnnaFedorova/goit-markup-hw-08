@@ -2,9 +2,11 @@
   background-color: $dark-bgc;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (max-width: 767px) {
-    padding-right: 15px;
-    padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  @media screen and (min-width: 768px) {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -49,30 +51,28 @@
   display: block;
 }
 .footer-container {
-  display: flex;
-  align-items: baseline;
-
-  @media screen and (max-width: 767px) {
-    display: block;
-    justify-content: center;
-  }
+  display: block;
+  justify-content: center;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
-    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
   }
 }
 
 .footer-item:not(:last-child) {
   margin-bottom: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 .footer-item {
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }
@@ -110,6 +110,9 @@
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     margin-left: 0;
   }
+  /*@media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }*/
 }
 .footer-form-icon {
   margin-left: 10px;
@@ -128,11 +131,10 @@
 .footer-mail-input {
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 767px) {
-    align-items: center;
-    margin-top: 60px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  align-items: center;
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
     margin-top: 0;
   }
 }

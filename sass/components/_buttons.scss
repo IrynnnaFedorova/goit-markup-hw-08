@@ -53,8 +53,8 @@
   padding-right: 28px;
   padding-bottom: 10px;
   padding-left: 29px;
-
-  display: flex;
+  margin-top: 20px;
+  display: inline;
   align-items: center;
   cursor: pointer;
   font-weight: 700;
@@ -74,10 +74,9 @@
   &:focus {
     background-color: #0677d4;
   }
-  @media screen and (max-width: 1199px) {
-    align-items: center;
-    margin-top: 20px;
-    display: inline;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    display: flex;
   }
 }
 .close-btn {
