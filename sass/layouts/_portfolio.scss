@@ -33,8 +33,8 @@ ul.list.chapter {
 .portfoliowork {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 15px;
-  padding-right: 15px;
+  /*padding-left: 15px;
+  padding-right: 15px;*/
   padding-bottom: 30px;
   @media screen and (min-width: 767px) {
     padding: 0px;
@@ -83,7 +83,7 @@ ul.list.chapter {
   }
 }
 
-.product-link__img {
+img.product-link__img {
   width: 100%;
 }
 
