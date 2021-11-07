@@ -1629,13 +1629,14 @@ img.product-link__img {
 
 .clients-list__item {
   margin-top: 30px;
+  margin-left: 30px;
   flex-basis: calc((100% / 2 - 30px));
 }
 
 @media screen and (min-width: 768px) {
   .clients-list__item {
     margin-top: 30px;
-    margin-left: 0;
+    margin-left: 30px;
     flex-basis: calc((100% / 3 - 30px));
     justify-content: center;
   }
@@ -1651,7 +1652,7 @@ img.product-link__img {
 
 .clients-list__links {
   display: flex;
-  width: 170px;
+  /*max-width: 170px;*/
   height: 90px;
   justify-content: center;
   align-items: center;
