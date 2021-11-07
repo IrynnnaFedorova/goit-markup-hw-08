@@ -23,6 +23,7 @@ body {
   line-height: 1.71;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
 }
 
 p,
@@ -90,25 +91,23 @@ button {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-@media screen and (max-width: 767px) {
-  .section {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section {
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1102,18 +1101,26 @@ img.team-list__img {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
-  .team-list__item:nth-child(3) {
+/*.team-list__item:nth-child(1) {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}
+.team-list__item:nth-child(2) {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}
+.team-list__item:nth-child(3) {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
     margin-bottom: 60px;
   }
 }
-
-@media screen and (min-width: 767px) and (max-width: 1199px) {
-  .team-list__item:nth-child(4) {
+.team-list__item:nth-child(4) {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
     margin-bottom: 60px;
   }
-}
-
+}*/
 .team-list__img {
   margin-bottom: 30px;
 }
@@ -1132,7 +1139,6 @@ img.team-list__img {
 @media screen and (min-width: 768px) {
   .team-list {
     flex-basis: calc(100% / 2 - 30px);
-    justify-content: center;
     margin-right: 30px;
   }
 }
@@ -1279,20 +1285,14 @@ img.team-list__img {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
-  .team-list__item:nth-child(1) {
+@media screen and (min-width: 1200px) {
+  .footer-item:nth-child(1) {
     margin-right: 70px;
   }
 }
 
 .footer-item:not(:last-child) {
   margin-bottom: 70px;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-item:not(:last-child) {
-    margin-left: 70px;
-  }
 }
 
 @media screen and (max-width: 1199px) {
