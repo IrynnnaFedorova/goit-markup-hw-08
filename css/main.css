@@ -1279,6 +1279,12 @@ img.team-list__img {
   }
 }
 
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .team-list__item:nth-child(1) {
+    margin-right: 70px;
+  }
+}
+
 .footer-item:not(:last-child) {
   margin-bottom: 70px;
 }

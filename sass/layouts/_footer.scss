@@ -64,13 +64,18 @@
     align-items: baseline;
   }
 }
-
+.team-list__item:nth-child(1) {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    margin-right: 70px;
+  }
+}
 .footer-item:not(:last-child) {
   margin-bottom: 70px;
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
 }
+
 .footer-item {
   @media screen and (max-width: 1199px) {
     text-align: center;
