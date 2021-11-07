@@ -973,7 +973,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .characteristic-item {
     width: calc(100% / 4 - 30px);
   }
