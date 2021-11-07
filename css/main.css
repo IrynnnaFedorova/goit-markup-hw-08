@@ -457,7 +457,7 @@ button {
   justify-content: center;
 }
 
-.social-item:not(:last-child) {
+.social-list:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -1145,6 +1145,7 @@ img.team-list__img {
 
 .team-networks {
   justify-content: center;
+  margin-bottom: 24px;
 }
 
 .social-item:not(:last-child) {
@@ -1601,6 +1602,7 @@ img.product-link__img {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc((100% / 2 - 30px));
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1608,7 +1610,6 @@ img.product-link__img {
     padding-bottom: 30px;
     justify-content: center;
     margin-top: -30px;
-    margin-left: -30px;
     width: 100%;
   }
 }
@@ -1622,8 +1623,22 @@ img.product-link__img {
 
 .clients-list__item {
   margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc((100% / 6 - 30px));
+  flex-basis: calc((100% / 2 - 30px));
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    margin-top: 30px;
+    flex-basis: calc((100% / 3 - 30px));
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    margin-top: 30px;
+    flex-basis: calc((100% / 6 - 30px));
+  }
 }
 
 .clients-list__links {
