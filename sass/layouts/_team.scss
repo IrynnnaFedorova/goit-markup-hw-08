@@ -47,7 +47,6 @@ img.team-list__img {
   background: $white-text-color;
   @media screen and (min-width: 767px) {
     flex-basis: calc((100% / 2 - 30px));
-    padding-bottom: 0;
   }
   @media screen and (min-width: 1199px) {
     flex-basis: calc((100% / 4 - 30px));
