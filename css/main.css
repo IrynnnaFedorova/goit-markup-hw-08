@@ -80,7 +80,9 @@ button {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 767px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -97,8 +99,6 @@ button {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section {
-    padding-left: 15px;
-    padding-right: 15px;
     padding-bottom: 60px;
     padding-top: 60px;
   }
@@ -1609,6 +1609,7 @@ img.product-link__img {
     justify-content: center;
     margin-top: -30px;
     margin-left: -30px;
+    width: 100%;
   }
 }
 
