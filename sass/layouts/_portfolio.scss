@@ -4,21 +4,31 @@
   align-items: center;
   margin-bottom: 50px;
 }
-.chapter-item:not(:last-child) {
+
+.chapter-item {
+  margin-left: 8px;
+  margin-top: 15px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+/*.chapter-item:not(:last-child) {
   margin-right: 8px;
   padding-top: 15px;
   @media screen and (min-width: 768px) {
     padding-top: 0;
   }
-}
+}*/
 
 ul.list.chapter {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  align-items: baseline;
+  margin-left: -8px;
+  margin-top: -15px;
   @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-top: 0;
   }
 }
 
